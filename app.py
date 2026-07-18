@@ -20,8 +20,8 @@ st.set_page_config(
 # -------------------------------
 @st.cache_resource
 def load_model_and_tokenizer():
-    model = tf.keras.models.load_model("./model/model4_0_758.keras")
-    tokenizer = joblib.load("./model/tokenizer.pkl")
+    model = tf.keras.models.load_model("./model4_0_758.keras")
+    tokenizer = joblib.load("./tokenizer.pkl")
     return model, tokenizer
 
 model, tokenizer = load_model_and_tokenizer()
